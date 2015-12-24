@@ -19,17 +19,19 @@ Sources: [stackoverflow], [git-credential-store]
 Everybody commits to `master`branch.
 
 1. Clone a repository
-```bash
-# automatically adds shortcut 'origin' back to parent repository
-git clone https://github.com/bitcoin/bitcoin.git
-```
+
+   ```bash
+   # automatically adds shortcut 'origin' back to parent repository
+   git clone https://github.com/bitcoin/bitcoin.git
+   ```
 
 1. Make local changes
-```bash
-git status
-git add <some files>
-git commit
-```
+
+   ```bash
+   git status
+   git add <some files>
+   git commit
+   ```
 
 1. Incorporate upstream changes
 ```bash
