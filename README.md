@@ -15,6 +15,17 @@ git config --global credential.helper wincred
 
 Sources: [stackoverflow], [git-credential-store]
 
+
+## Undo git add
+
+```bash
+# remove file from about-to-be-commited index without changing anything else
+git reset <file> 
+# unstage all due changes
+git reset
+```
+
+
 ##Workflows
 ### Simple Centralized Workflow
 Everybody commits to `master` branch.
