@@ -38,12 +38,10 @@ git commit
 #  Not strictly necessary, but removes superfluous “merge commit”
 git pull --rebase origin master
 ```
-
 1. Push local `master` to central repository
 ```bash
 git push origin master
 ```
-
 1. Resolve merge conflicts. Repeat until all conflicts resolved.
 ```bash
 # see where the problems are
@@ -52,14 +50,11 @@ git status
 git add <some files>
 git rebase --continue
 ```
-**Tip:** Something bad happens? Go right back to before the pull with `git rebase --abort`
-
+> Something bad happens? Go right back to before the pull with `git rebase --abort`
 1. Publish features
 ```bash
 git push origin master
 ```
-
-
 
 Sources: [centralized workflow]
 
