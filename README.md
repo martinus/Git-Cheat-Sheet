@@ -16,7 +16,7 @@ git config --global credential.helper wincred
 Sources: [stackoverflow], [git-credential-store]
 
 ## Simple Centralized Workflow
-Everybody commits to `master`branch.
+Everybody commits to `master` branch.
 
 1. Clone a repository
 
@@ -34,30 +34,36 @@ Everybody commits to `master`branch.
    ```
 
 1. Incorporate upstream changes
-```bash
-# like SVN update: fetches changes and merges them.
-# --rebase: move all local commits to tip of master.
-#  Not strictly necessary, but removes superfluous “merge commit”
-git pull --rebase origin master
-```
 
-2. Push local `master` to central repository
-```bash
-git push origin master
-```
-3. Resolve merge conflicts. Repeat until all conflicts resolved.
-```bash
-# see where the problems are
-git status
-# Now edit files to your liking.
-git add <some files>
-git rebase --continue
-```
+   ```bash
+   # like SVN update: fetches changes and merges them.
+   # --rebase: move all local commits to tip of master.
+   #  Not strictly necessary, but removes superfluous “merge commit”
+   git pull --rebase origin master
+   ```
+
+1. Push local `master` to central repository
+
+   ```bash
+   git push origin master
+   ```
+
+1. Resolve merge conflicts. Repeat until all conflicts resolved.
+
+   ```bash
+   # see where the problems are
+   git status
+   # Now edit files to your liking.
+   git add <some files>
+   git rebase --continue
+   ```
 > Something bad happens? Go right back to before the pull with `git rebase --abort`
-4. Publish features
-```bash
-git push origin master
-```
+
+1. Publish features
+
+   ```bash
+   git push origin master
+   ```
 
 Sources: [centralized workflow]
 
