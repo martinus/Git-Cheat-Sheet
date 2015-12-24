@@ -57,7 +57,7 @@ Everybody commits to `master` branch.
    git add <some files>
    git rebase --continue
    ```
-> Something bad happens? Go right back to before the pull with `git rebase --abort`
+Something bad happens? Go right back to before the pull with `git rebase --abort`
 
 1. Publish features
 
