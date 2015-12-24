@@ -69,12 +69,52 @@ Something bad happens? Go right back to before the pull with `git rebase --abort
 Sources: [centralized workflow]
 
 ### Feature Branch Workflow
-TODO
+Create a new branch for every new feature. Each branch has a clear, highly focused purpose. Use descriptive names, like `animated-menu-items`. Feature branches should be pushed to the central repository.
 
-Sources: [feature branch workflow]
+1. Begin a new feature
+
+   ```bash
+   git checkout -b animated-menu-items
+   ```
+
+1. Make local changes
+
+   ```bash
+   git status
+   git add <some files>
+   git commit
+   ```
+
+1. Push local feature branch `animated-menu-items` to central repository
+
+   ```bash
+   # -u adds upstream reference to the branch.
+   # After that 'git pull' and 'git push' work on that branch.
+   git push -u origin animated-menu-items
+   ```
+
+1. Make pull request: Let devs have a look at the branch, fix stuff until everybody is happy.
+1. Merge the feature into `master`
+
+   ```bash
+   # Make sure we are operating on the branch 'master'
+   git checkout master
+   # make sure we are up to date!
+   git pull
+   # merge the branch
+   git pull origin animated-menu-items
+   # finally, push back updated master to origin
+   git push
+   ```
+
+
+
+
+Sources: [feature branch workflow], [git-push]
 
 ---
 [stackoverflow]: http://stackoverflow.com/a/5343146/48181
 [git-credential-store]: https://git-scm.com/docs/git-credential-store
 [centralized workflow]: https://www.atlassian.com/git/tutorials/comparing-workflows/centralized-workflow
 [feature branch workflow]: https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow
+[git-push]: https://git-scm.com/docs/git-push
