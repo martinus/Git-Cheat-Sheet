@@ -74,7 +74,7 @@ TODO
 Sources: [feature branch workflow]
 
 ---
-* [stackoverflow]: http://stackoverflow.com/a/5343146/48181
-* [git-credential-store]: https://git-scm.com/docs/git-credential-store
-* [centralized workflow]: https://www.atlassian.com/git/tutorials/comparing-workflows/centralized-workflow
-* [feature branch workflow]: https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow
+[stackoverflow]: http://stackoverflow.com/a/5343146/48181
+[git-credential-store]: https://git-scm.com/docs/git-credential-store
+[centralized workflow]: https://www.atlassian.com/git/tutorials/comparing-workflows/centralized-workflow
+[feature branch workflow]: https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow
