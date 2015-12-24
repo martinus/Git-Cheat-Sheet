@@ -32,12 +32,12 @@ git commit
 ```
 
 1. Incorporate upstream changes
-```bash
-# like SVN update: fetches changes and merges them.
-# --rebase: move all local commits to tip of master.
-#  Not strictly necessary, but removes superfluous “merge commit”
-git pull --rebase origin master
-```
+   ```bash
+   # like SVN update: fetches changes and merges them.
+   # --rebase: move all local commits to tip of master.
+   #  Not strictly necessary, but removes superfluous “merge commit”
+   git pull --rebase origin master
+   ```
 1. Push local `master` to central repository
 ```bash
 git push origin master
