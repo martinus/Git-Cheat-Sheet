@@ -15,7 +15,8 @@ git config --global credential.helper wincred
 
 Sources: [stackoverflow], [git-credential-store]
 
-## Simple Centralized Workflow
+##Workflows
+### Simple Centralized Workflow
 Everybody commits to `master` branch.
 
 1. Clone a repository
@@ -67,7 +68,13 @@ Something bad happens? Go right back to before the pull with `git rebase --abort
 
 Sources: [centralized workflow]
 
+### Feature Branch Workflow
+TODO
+
+Sources: [feature branch workflow]
+
 ---
-[stackoverflow]: http://stackoverflow.com/a/5343146/48181
-[git-credential-store]: https://git-scm.com/docs/git-credential-store
-[centralized workflow]: https://www.atlassian.com/git/tutorials/comparing-workflows/centralized-workflow
+* [stackoverflow]: http://stackoverflow.com/a/5343146/48181
+* [git-credential-store]: https://git-scm.com/docs/git-credential-store
+* [centralized workflow]: https://www.atlassian.com/git/tutorials/comparing-workflows/centralized-workflow
+* [feature branch workflow]: https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow
