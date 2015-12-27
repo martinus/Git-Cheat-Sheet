@@ -1,8 +1,12 @@
 # Git Cheat Sheet
 ## Concepts
 * `master` Name of the default branch, similar to SVN's trunk.
+* `HEAD` The "current branch". E.g. after 'git checkout' HEAD revision changes to point to the tip.of the branch. 
+* Ancestry References
+   * `^` Parent of that commit. E.g. `git show HEAD^` to show parent of HEAD or `git show d921970^2` means the second parent of d921970.
 
-Sources: [centralized workflow]
+
+Sources: [centralized workflow], [HEAD], [Ancestry]
 
 ## Store credentials for https:// 
 
@@ -15,8 +19,14 @@ git config --global credential.helper wincred
 
 Sources: [stackoverflow], [git-credential-store]
 
+### Undo local commit
 
-## Undo git add
+```bash
+git commit -m "Something terribly misguided" 
+git reset --soft HEAD~
+```
+
+### Undo git add
 
 ```bash
 # remove file from about-to-be-commited index without changing anything else
@@ -25,6 +35,12 @@ git reset <file>
 git reset
 ```
 
+
+### Show the changes which have been staged
+
+```bash
+git diff --cached
+```
 
 ##Workflows
 ### Simple Centralized Workflow
@@ -129,3 +145,5 @@ Sources: [feature branch workflow], [git-push]
 [centralized workflow]: https://www.atlassian.com/git/tutorials/comparing-workflows/centralized-workflow
 [feature branch workflow]: https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow
 [git-push]: https://git-scm.com/docs/git-push
+[head]: http://stackoverflow.com/a/2304106/48181
+[Ancestry]: https://git-scm.com/book/en/v2/Git-Tools-Revision-Selection#Ancestry-References
