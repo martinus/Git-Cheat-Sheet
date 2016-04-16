@@ -18,7 +18,7 @@ git config --global credential.helper wincred
 git config --global commit.gpgsign true
 ```
 
-## Signing 
+## Signing
 
 Sources: [stackoverflow], [git-credential-store]
 
