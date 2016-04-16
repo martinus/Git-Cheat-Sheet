@@ -8,14 +8,18 @@
 
 Sources: [centralized workflow], [HEAD], [Ancestry]
 
-## Store credentials for https:// 
+## Global Git Configuration
 
 ```bash
 # cache credentials for a day
 git config --global credential.helper "cache --timeout=86400"
-# wincred for Windows, gnome-keyring for Linux, osxkeychain for Mac
+# Store credentials for https:// (wincred for Windows, gnome-keyring for Linux, osxkeychain for Mac)
 git config --global credential.helper wincred
+# commits are signed by default
+git config --global commit.gpgsign true
 ```
+
+## Signing 
 
 Sources: [stackoverflow], [git-credential-store]
 
