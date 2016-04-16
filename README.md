@@ -138,8 +138,6 @@ Create a new branch for every new feature. Each branch has a clear, highly focus
    ```
 
 
-
-
 Sources: [feature branch workflow], [git-push]
 
 ---
@@ -150,3 +148,4 @@ Sources: [feature branch workflow], [git-push]
 [git-push]: https://git-scm.com/docs/git-push
 [head]: http://stackoverflow.com/a/2304106/48181
 [Ancestry]: https://git-scm.com/book/en/v2/Git-Tools-Revision-Selection#Ancestry-References
+
