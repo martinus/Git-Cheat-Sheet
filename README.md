@@ -5,7 +5,6 @@
 * Ancestry References
    * `^` Parent of that commit. E.g. `git show HEAD^` to show parent of HEAD or `git show d921970^2` means the second parent of d921970.
 
-
 Sources: [centralized workflow], [HEAD], [Ancestry]
 
 ## Global Git Configuration
