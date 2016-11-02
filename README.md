@@ -22,14 +22,22 @@ git config --global commit.gpgsign true
 
 Sources: [stackoverflow], [git-credential-store]
 
-### Undo local commit
+### Undoing Changes
+
+#### Undo Local Change
+
+```bash
+git checkout <file>
+```
+
+#### Undo Local Commit
 
 ```bash
 git commit -m "Something terribly misguided" 
 git reset --soft HEAD~
 ```
 
-### Undo git add
+#### Undo git add
 
 ```bash
 # remove file from about-to-be-commited index without changing anything else
@@ -147,3 +155,4 @@ Sources: [feature branch workflow], [git-push]
 [git-push]: https://git-scm.com/docs/git-push
 [head]: http://stackoverflow.com/a/2304106/48181
 [Ancestry]: https://git-scm.com/book/en/v2/Git-Tools-Revision-Selection#Ancestry-References
+[Undoing Changes]: https://www.atlassian.com/git/tutorials/undoing-changes
