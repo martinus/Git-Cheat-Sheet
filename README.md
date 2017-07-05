@@ -53,7 +53,7 @@ git reset
 git diff --cached
 ```
 
-##Workflows
+## Workflows
 ### Simple Centralized Workflow
 Everybody commits to `master` branch.
 
