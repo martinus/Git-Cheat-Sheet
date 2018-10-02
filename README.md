@@ -109,12 +109,12 @@ Sources: [centralized workflow]
 ### Feature Branch Workflow
 Create a new branch for every new feature. Each branch has a clear, highly focused purpose. Use descriptive names, like `animated-menu-items`. Feature branches should be pushed to the central repository.
 
-1. Begin a new feature
-
+1. Checkout a remote branch to begin working on a feature
    ```bash
-   git checkout -b animated-menu-items
+   git branch -r # gives e.g. origin/feature/make-everything-better
+   git checkout -b make-everything-better origin/feature/make-everything-better
    ```
-
+   
 1. Make local changes
 
    ```bash
